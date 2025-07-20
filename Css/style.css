@@ -1,0 +1,39 @@
+body {
+    background: #000;
+    color: #0f0;
+    font-family: monospace;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    color: #0f0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.matrix {
+    text-shadow: 0 0 5px #0f0, 0 0 10px #0f0, 0 0 15px #0f0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.advertising {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.contacts {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+}
