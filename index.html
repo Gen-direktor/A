@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Создание сайта с помощью HTML и CSS. Инструкция</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Создание сайта с помощью HTML и CSS. Инструкция</h1>
+        
+        <!-- Блок содержания -->
+        <div class="matrix">
+            <h2>Содержание</h2>
+            <ul>
+                <li><a href="#introduction">Введение в тему</a></li>
+                <li><a href="#html">Про HTML</a></li>
+                <li><a href="#css">Про CSS</a></li>
+                <li><a href="#html-abc">Азбука HTML</a></li>
+                <li><a href="#css-abc">Азбука CSS</a></li>
+                <li><a href="#tools">Инструменты</a></li>
+                <li><a href="#practice">Практический пример</a></li>
+            </ul>
+        </div>
+
+        <!-- Контентные блоки -->
+        <div class="matrix" id="introduction">
+    <h2>Введение в тему</h2>
+    <p><strong>Веб-разработка</strong> — это процесс создания веб-сайтов и веб-приложений. Она включает в себя:</p>
+    <ul>
+        <li>Создание структуры сайта</li>
+        <li>Оформление внешнего вида</li>
+        <li>Программирование функционала</li>
+        <li>Оптимизацию для пользователей</li>
+    </ul>
+
+    <p>Сайты нужны для:</p>
+    <ul>
+        <li>Представления компании в интернете</li>
+        <li>Продажи товаров и услуг</li>
+        <li>Информационного обмена</li>
+        <li>Развлечения</li>
+        <li>Обучения</li>
+    </ul>
+
+    <p>Основные компоненты сайта:</p>
+    <ul>
+        <li><strong>HTML</strong> — структура контента</li>
+        <li><strong>CSS</strong> — стили и оформление</li>
+        <li><strong>JavaScript</strong> — интерактивность</li>
+        <li><strong>Серверные языки</strong> — обработка данных</li>
+    </ul>
+</div>
+
+        <div class="matrix" id="html">
+    <h2>Про HTML</h2>
+    
+    <p><strong>HTML</strong> (HyperText Markup Language) — это язык разметки гипертекста, который:</p>
+    <ul>
+        <li>Определяет структуру веб-страницы</li>
+        <li>Создает основу для контента</li>
+        <li>Обеспечивает семантическую разметку</li>
+    </ul>
+
+    <p>Базовые теги HTML:</p>
+    <ul>
+        <li><strong>Заголовки</strong>: <code>&lt;h1&gt;</code> до <code>&lt;h6&gt;</code></li>
+        <li><strong>Абзацы</strong>: <code>&lt;p&gt;</code></li>
+        <li><strong>Списки</strong>: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
+        <li><strong>Ссылки</strong>: <code>&lt;a href="url"&gt;</code></li>
+        <li><strong>Изображения</strong>: <code>&lt;img src="путь"&gt;</code></li>
+    </ul>
+
+    <p>Пример простой HTML-страницы:</p>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Пример страницы&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Привет, мир!&lt;/h1&gt;
+    &lt;p&gt;Это пример HTML-страницы.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+</div>
+
+
+        <div class="matrix" id="css">
+    <h2>Про CSS</h2>
+    
+    <p><strong>CSS</strong> (Cascading Style Sheets) — это язык стилей, который:</p>
+    <ul>
+        <li>Управляет внешним видом HTML-элементов</li>
+        <li>Определяет макет страницы</li>
+        <li>Создает адаптивный дизайн</li>
+    </ul>
+
+    <p>Основные свойства CSS:</p>
+    <ul>
+        <li><strong>Цвета</strong>: <code>color</code>, <code>background-color</code></li>
+        <li><strong>Размеры</strong>: <code>width</code>, <code>height</code></li>
+        <li><strong>Позиционирование</strong>: <code>position</code>, <code>float</code></li>
+        <li><strong>Отступы</strong>: <code>margin</code>, <code>padding</code></li>
+
+        <div class="matrix" id="css-abc">
+    <h2>Азбука CSS</h2>
+    
+    <p>Основные концепции и свойства CSS:</p>
+    
+    <h3>Базовые селекторы</h3>
+    <ul>
+        <li><strong>Универсальный селектор</strong>: <code>*</code></li>
+        <li><strong>Селектор элемента</strong>: <code>div, p, h1</code></li>
+        <li><strong>Селектор класса</strong>: <code>.class-name</code></li>
+        <li><strong>Селектор идентификатора</strong>: <code>#id-name</code></li>
+    </ul>
+    
+    <h3>Свойства оформления</h3>
+    <ul>
+        <li><strong>Цвета</strong>:
+            <ul>
+                <li><code>color</code> — цвет текста</li>
+                <li><code>background-color</code> — цвет фона</li>
+            </ul>
+        </li>
+        <li><strong>Шрифты</strong>:
+            <ul>
+                <li><code>font-family</code> — семейство шрифтов</li>
+                <li><code>font-size</code> — размер шрифта</li>
+                <li><code>font-weight</code> — жирность</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Свойства позиционирования</h3>
+    <ul>
+        <li><strong>Размеры</strong>:
+            <ul>
+                <li><code>width</code> — ширина</li>
+                <li><code>height</code> — высота</li>
+            </ul>
+        </li>
+        <li><strong>Отступы</strong>:
+            <ul>
+                <li><code>margin</code> — внешние отступы</li>
+                <li><code>padding</code> — внутренние отступы</li>
+            </ul>
+        </li>
+        <li><strong>Позиционирование</strong>:
+            <ul>
+                <li><code>position</code> — тип позиционирования</li>
+                <li><code>float</code> — обтекание</li>
+                <li><code>display</code> — тип отображения</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Псевдоклассы и псевдоэлементы</h3>
+    <ul>
+        <li><strong>Псевдоклассы</strong>:
+            <ul>
+                <li><code>:hover</code> — при наведении</li>
+                <li><code>:focus</code> — при фокусе</li>
+                <li><code:visited</code> — посещенная ссылка</li>
+            </ul>
+        </li>
+        <li><strong>Псевдоэлементы</strong>:
+            <ul>
+                <li><code>::before</code> — вставка перед элементом</li>
+                <li><code>::after</code> — вставка после элемента</li>
+            </ul>
+        </li>
+    </ul>
+    
+    <h3>Пример стилей</h3>
+    <pre>
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #007bff;
+}
+    </pre>
+</div>
+
+
+        <div class="matrix" id="html-abc">
+    <h2>Азбука HTML</h2>
+    
+    <p>Давайте разберем основные теги HTML:</p>
+    
+    <h3>Базовая структура документа</h3>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code> — объявление типа документа</li>
+        <li><code>&lt;html&gt;</code> — корневой элемент</li>
+        <li><code>&lt;head&gt;</code> — содержит метаинформацию</li>
+        <li><code>&lt;body&gt;</code> — видимое содержимое страницы</li>
+    </ul>
+    
+    <h3>Форматирование текста</h3>
+    <ul>
+        <li><code>&lt;p&gt;</code> — абзац</li>
+        <li><code>&lt;h1&gt;-&lt;h6&gt;</code> — заголовки разного уровня</li>
+        <li><code>&lt;strong&gt;</code> — важный текст (жирный)</li>
+        <li><code>&lt;em&gt;</code> — акцент (курсив)</li>
+        <li><code>&lt;br&gt;</code> — перенос строки</li>
+        <li><code>&lt;hr&gt;</code> — горизонтальная линия</li>
+    </ul>
+    
+    <h3>Списки</h3>
+    <ul>
+        <li><code>&lt;ul&gt;</code> — маркированный список</li>
+        <li><code>&lt;ol&gt;</code> — нумерованный список</li>
+        <li><code>&lt;li&gt;</code> — элемент списка</li>
+    </ul>
+    
+    <h3>Ссылки и медиа</h3>
+    <ul>
+        <li><code>&lt;a href="url"&gt;</code> — гиперссылка</li>
+        <li><code>&lt;img src="путь"&gt;</code> — изображение</li>
+        <li><code>&lt;video&gt;</code> — видео</li>
+        <li><code>&lt;audio&gt;</code> — аудио</li>
+    </ul>
+    
+    <h3>Таблицы</h3>
+    <ul>
+        <li><code>&lt;table&gt;</code> — таблица</li>
+        <li><code>&lt;tr&gt;</code> — строка таблицы</li>
+        <li><code>&lt;th&gt;</code> — заголовок столбца</li>
+        <li><code>&lt;td&gt;</code> — ячейка таблицы</li>
+    </ul>
+    
+    <h3>Формы</h3>
+    <ul>
+        <li><code>&lt;form&gt;</code> — форма</li>
+        <li><code>&lt;input&gt;</code> — поле ввода</li>
+        <li><code>&lt;textarea&gt;</code> — многострочное поле</li>
+        <li><code>&lt;select&gt;</code> — выпадающий список</li>
+    </ul>
+</div>
+
+
+        <div class="matrix" id="tools">
+            <h2>Инструменты</h2>
+            <p>Текстовый редактор и файловый менеджер ...</p>
+        </div>
+
+        <<div class="matrix" id="practice">
+ <h2>Практический пример создания простой веб-страницы</h2>
+ 
+ <p>Давайте создадим простую веб-страницу с использованием HTML и CSS.</p>
+ 
+ <h3>Шаг 1: Создаем базовую структуру HTML</h3>
+ <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+ &lt;meta charset="UTF-8"&gt;
+ &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+ &lt;title&gt;Простая веб-страница&lt;/title&gt;
+ &lt;link rel="stylesheet" href="css/styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+ &lt;header&gt;
+ &lt;h1&gt;Добро пожаловать на мой сайт&lt;/h1&gt;
+ &lt;/header&gt;
+ 
+ &lt;main&gt;
+ &lt;p&gt;Это пример простой веб-страницы, созданной с помощью HTML и CSS.&lt;/p&gt;
+ 
+ &lt;h2&gt;Наши услуги&lt;/h2&gt;
+ &lt;ul&gt;
+ &lt;li&gt;Веб-разработка&lt;/li&gt;
+ &lt;li&gt;Дизайн&lt;/li&gt;
+ &lt;li&gt;SEO-оптимизация&lt;/li&gt;
+ &lt;/ul&gt;
+ &lt;/main&gt;
+ 
+ &lt;footer&gt;
+ &lt;p&gt;© 2025 Мой сайт&lt;/p&gt;
+ &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+ </pre>
+ 
+ <h3>Шаг 2: Добавляем стили CSS</h3>
+ <p>Создаем файл <code>styles.css</code> со следующим содержимым:</p>
+ <pre>
+body {
+ margin: 0;
+ font-family: Arial, sans-serif;
+}
+
+header {
+ background-color: #f8f9fa;
+ padding: 20px;
+ text-align: center;
+}
+
+main {
+ padding: 20px;
+}
+
+ul {
+ list-style-type: none;
+ padding: 0;
+}
+
+li {
+ margin: 10px 0;
+}
+
+footer {
+ background-color: #343a40;
+ color: white;
+ text-align: center;
+ padding: 15px 0;
+}
+ </pre>
+ 
+ <h3>Результат</h3>
+ <p>После подключения всех файлов у нас получится простая, но функциональная веб-страница с:</p>
+ <ul>
+ <li>Заголовочной частью</li>
+ <li>Основным контентом</li>
+ <li>Подвалом с копирайтом</li>
+ <li>Базовой стилизацией</li>
+ </ul>
+ 
+ <p>Этот пример можно использовать как основу для создания более сложных проектов.</p>
+</div>
+
+
+        <!-- Аналогично создаем блоки для остальных разделов -->
+
+        <!-- Блок рекламы -->
+        <div class="advertising">
+            <p>Здесь может размещается Ваше рекламное объявление</p>
+        </div>
+
+        <!-- Блок контактов -->
+        <div class="contacts">
+            <p>Контакты для связи:</p>
+            <ul>
+                <li>Telegram: @otryadbobarly</li>
+                
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
